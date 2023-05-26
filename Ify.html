@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="tony2.css" type="text/css" media="all" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title></title>
+  </head>
+  <body>
+<div class="container">
+<span class="text first-text"></span>   
+<span class="text second-text">Like You</span>
+</div>
+
+<script> 
+const text = document.querySelector(".second-text");
+
+const textLoad = () => {
+setTimeout(() => {
+text.textContent = " ify I Like You.";
+}, 0);
+
+setTimeout(() => { text.textContent = " ify I Miss You.";
+}, 4000);
+
+setTimeout(() => {
+text.textContent=" ify I Love You💖.";
+}, 8000);
+
+};
+
+textLoad();
+
+setInterval(textLoad, 12000); 
+</script>
+  </body>
+</html>
